@@ -43,5 +43,24 @@ namespace Vampire_Blood
             btnMaximize.Click += (sender, e) => { WindowState = WindowState == WindowState.Maximized ? WindowState.Normal : WindowState.Maximized; };
             btnClose.Click += (sender, e) => { Close(); };
         }
+
+        private void btnHumanos_Click(object sender, RoutedEventArgs e)
+        {
+            Button btn = (Button)sender;
+
+            if (btn.Name.Equals("btnHumanos")){
+                Humanos humanos = new Humanos();
+                humanos.ShowDialog();
+            }else if(btn.Name.Equals("btnLogin")){
+                Login login = new Login();
+                login.ShowDialog();
+            }
+            else
+            {
+                Animales animales = new Animales();
+                animales.ShowDialog();
+            }
+          
+        }
     }
 }
