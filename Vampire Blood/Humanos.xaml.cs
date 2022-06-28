@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,6 +23,25 @@ namespace Vampire_Blood
         public Humanos()
         {
             InitializeComponent();
+            Window_Actions();
+
         }
+
+        private void Window_Actions()
+        {
+            btnMinimeze.Click += (sender, e) => { WindowState = WindowState.Minimized; };
+            btnMaximize.Click += (sender, e) => { WindowState = WindowState == WindowState.Maximized ? WindowState.Normal : WindowState.Maximized; };
+            btnClose.Click += (sender, e) => { Close(); };
+        }
+
+        private void Window_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.ChangedButton == MouseButton.Left)
+                this.DragMove();
+        }
+
+
+
+
     }
 }

@@ -5,8 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Vampire_Blood"
         mc:Ignorable="d"
-        Title="Humanos" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="Humanos" Height="450" Width="800" WindowStartupLocation="CenterScreen" 
+        WindowStyle="None" AllowsTransparency="True" Background="Transparent" MouseDown="Window_MouseDown">
+    <Border CornerRadius="10" Background="#9e2a2b">
+        <Grid x:Name="principal" Background="Transparent" >
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <!--#region BOTONES VENTANA-->
+            <Button x:Name="btnMinimeze" Foreground="AliceBlue" Grid.Row="0" Width="30" Background="Transparent" HorizontalAlignment="Right" Margin="0 0 70 0">-</Button>
+            <Button x:Name="btnMaximize" Foreground="AliceBlue" Grid.Row="0" Width="30" Background="Transparent" HorizontalAlignment="Right" Margin="0 0 40 0">0</Button>
+            <Button x:Name="btnClose" Foreground="AliceBlue" Grid.Row="0" Width="30" Background="Transparent" HorizontalAlignment="Right" Margin="0 0 10 0">x</Button>
+            <!--#endregion-->
+
+          
+        </Grid>
+    </Border>
+
 </Window>
