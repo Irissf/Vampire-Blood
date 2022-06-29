@@ -22,6 +22,22 @@ namespace Vampire_Blood
         public Login()
         {
             InitializeComponent();
+            Window_Actions();
         }
+
+
+        private void Window_Actions()
+        {
+            btnMinimeze.Click += (sender, e) => { WindowState = WindowState.Minimized; };
+            btnMaximize.Click += (sender, e) => { WindowState = WindowState == WindowState.Maximized ? WindowState.Normal : WindowState.Maximized; };
+            btnClose.Click += (sender, e) => { Close(); };
+        }
+
+        private void Window_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.ChangedButton == MouseButton.Left)
+                this.DragMove();
+        }
+
     }
 }
