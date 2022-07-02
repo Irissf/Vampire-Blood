@@ -52,8 +52,12 @@ namespace Vampire_Blood
                 Humanos humanos = new Humanos();
                 humanos.ShowDialog();
             }else if(btn.Name.Equals("btnLogin")){
+                
+                this.Visibility = System.Windows.Visibility.Collapsed;
+
                 Login login = new Login();
                 login.ShowDialog();
+
             }
             else
             {

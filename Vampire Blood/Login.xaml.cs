@@ -19,6 +19,7 @@ namespace Vampire_Blood
     /// </summary>
     public partial class Login : Window
     {
+
         public Login()
         {
             InitializeComponent();
@@ -29,8 +30,10 @@ namespace Vampire_Blood
         private void Window_Actions()
         {
             btnMinimeze.Click += (sender, e) => { WindowState = WindowState.Minimized; };
-            btnMaximize.Click += (sender, e) => { WindowState = WindowState == WindowState.Maximized ? WindowState.Normal : WindowState.Maximized; };
-            btnClose.Click += (sender, e) => { Close(); };
+            btnClose.Click += (sender, e) => {
+                Application.Current.MainWindow.Visibility = Visibility.Visible;
+                Close();
+            };
         }
 
         private void Window_MouseDown(object sender, MouseButtonEventArgs e)
