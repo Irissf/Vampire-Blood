@@ -42,5 +42,32 @@ namespace Vampire_Blood
                 this.DragMove();
         }
 
+        private void btn_Click(object sender, RoutedEventArgs e)
+        {
+            Button btn = (Button)sender;
+            if(btn.Name == "btnCancelar")
+            {
+                Application.Current.MainWindow.Visibility = Visibility.Visible;
+                Close();
+            }
+            else
+            {
+                if (txtFirstName != null && txtPassword != null)
+                {
+                    IniciarSesion();
+                }
+                else
+                {
+                    MessageBox.Show("Necesitas cubrir los dos campos");
+                }
+            }
+        }
+
+        private void IniciarSesion()
+        {
+            MessageBox.Show("name: "+ txtFirstName.Text+" pass: "+txtPassword.Text);
+
+        }
+
     }
 }

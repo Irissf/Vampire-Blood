@@ -22,11 +22,11 @@
 
             <Grid Grid.Row="1">
                 <Label Foreground="AliceBlue" FontSize="20" VerticalAlignment="Center" Margin="45 0 0 200"> Nombre:</Label>
-                <TextBox Name="firstName" Height="30" Width="300" FontSize="20" VerticalContentAlignment="Center" Margin="0 0 0 140"/>
+                <TextBox Name="txtFirstName" Height="30" Width="300" FontSize="20" VerticalContentAlignment="Center" Margin="0 0 0 140"/>
                 <Label Foreground="AliceBlue" FontSize="20" VerticalAlignment="Center" Margin="45 0 0 40">Contraseña:</Label>
-                <TextBox Name="Password" Height="30" Width="300" FontSize="20" VerticalContentAlignment="Center" Margin="0 0 0 -15"/>
-                <Button x:Name="btnAcceder" Height="40" Width="120" VerticalAlignment="Center" FontSize="20" HorizontalAlignment="Left" Margin="50 0 0 -200">Acceder</Button>
-                <Button x:Name="btnCancelar" Height="40" Width="120" VerticalAlignment="Center" FontSize="20" HorizontalAlignment="Right" Margin="0 0 50 -200">Cancelar</Button>
+                <TextBox Name="txtPassword" Height="30" Width="300" FontSize="20" VerticalContentAlignment="Center" Margin="0 0 0 -15"/>
+                <Button x:Name="btnAcceder" Height="40" Width="120" VerticalAlignment="Center" FontSize="20" HorizontalAlignment="Left" Margin="50 0 0 -200" Click="btn_Click">Acceder</Button>
+                <Button x:Name="btnCancelar" Height="40" Width="120" VerticalAlignment="Center" FontSize="20" HorizontalAlignment="Right" Margin="0 0 50 -200" Click="btn_Click">Cancelar</Button>
 
             </Grid>
 
