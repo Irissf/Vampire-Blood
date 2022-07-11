@@ -20,11 +20,18 @@ namespace Vampire_Blood
     /// </summary>
     public partial class Humanos : Window
     {
+
         public Humanos()
         {
             InitializeComponent();
             Window_Actions();
 
+            CreateTable();
+
+        }
+
+        private void CreateTable()
+        {
         }
 
         private void Window_Actions()

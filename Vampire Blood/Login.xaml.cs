@@ -52,13 +52,13 @@ namespace Vampire_Blood
             }
             else
             {
-                if (txtFirstName != null && txtPassword != null)
+                if (txtFirstName.Text.Equals("") || txtPassword.Text.Equals(""))
                 {
-                    IniciarSesion();
+                    MessageBox.Show("Necesitas cubrir los dos campos");
                 }
                 else
                 {
-                    MessageBox.Show("Necesitas cubrir los dos campos");
+                    IniciarSesion();
                 }
             }
         }

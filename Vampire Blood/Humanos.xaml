@@ -21,7 +21,7 @@
             <Button x:Name="btnClose" Foreground="AliceBlue" Grid.Row="0" Width="30" Background="Transparent" HorizontalAlignment="Right" Margin="0 0 10 0">x</Button>
             <!--#endregion-->
 
-          
+
         </Grid>
     </Border>
 
